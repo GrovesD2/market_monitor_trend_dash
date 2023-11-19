@@ -104,28 +104,6 @@ for idx, row in df_pattern.iterrows():
         opacity=highlight_opacity,
     )
 
-# # Add the box overlays for the treding threshold
-# ranges = []
-# start_date = None
-
-# for idx, row in df.iterrows():
-#     if row['trend_pred'] >= trend_thresh:
-#         if start_date is None:
-#             start_date = row['Date']
-#     elif start_date is not None:
-#         end_date = row['Date']
-#         ranges.append((start_date, end_date))
-#         start_date = None
-
-# for start_date, end_date in ranges:
-#     fig.add_vrect(
-#         x0=start_date,  
-#         x1=end_date,    
-#         fillcolor=highlight_color,
-#         line_width=0,
-#         opacity=highlight_opacity,
-#     )
-
 fig.update_layout(
     xaxis_rangeslider_visible=False,
     xaxis_title="Date",
@@ -136,7 +114,12 @@ fig.update_layout(
 
 st.plotly_chart(fig)
 
-expander = st.expander('About this dash')
+expander = st.expander('ReadME & Disclaimer')
 expander.write('''
-    This dash is cool AF
+    **Please visit and read through the 
+    [ReadME](https://github.com/GrovesD2/market_monitor_trend_dash/tree/main#readme) 
+    before using this dashboard.**
+    
+    For any questions, please contact the author on [X](https://twitter.com/DrDanobi).
+
 ''')
