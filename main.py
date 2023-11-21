@@ -66,7 +66,7 @@ df = df[
 df = df.reset_index(drop=True)
 
 st.title('SPY Trend Prediction')
-st.write('Data last refreshed: ' + df['Date'].max().strftime('%Y-%m-%d'))
+st.write('Max Date in Data: ' + df['Date'].max().strftime('%Y-%m-%d'))
 st.write('Uptrend probability for tomorrow: ' + str(df['trend_pred'].round(2).values[-1]))
 
 fig = go.Figure()
