@@ -4,9 +4,10 @@ This repository holds the code, and input files required for the interactive Mar
 
 Inside this ReadME:
 1. What this dashboard is
-2. How to use the dashboard
-3. Disclaimer
-4. Contact
+2. When the data is refreshed
+3. How to use the dashboard
+4. Disclaimer
+5. Contact
 
 ## What this dashboard is
 
@@ -17,6 +18,12 @@ In short, this dashboard shows a chart of the SPY, and highlights regions where 
 The dashboard, and the results contained within the data files, are intended to demonstrate one method in which machine learning can be used on financial data.
 
 ⚠️ **This dashboard should not be used to make any financial decisions from - read the disclaimer in the ReadME before using the dashboard** ⚠️
+
+## When the data is refreshed
+
+The TL;DR - the dashboard inputs should be updated once per day, at 8am GMT. **Please refresh the dashboard daily - and check the GitHub repository if you are not sure when the files were last updated**.
+
+The date of the data will appear "lagged" in the dashboard, this is due to the data being refreshed from the last full trading day. Likewise, the [Market Montior](https://stockbee.blogspot.com/p/mm.html) is also refreshed on a daily cadence, and therefore, the model cannot be updated until the [Market Montior](https://stockbee.blogspot.com/p/mm.html) does. **To be clear, this data does not update during the trading day** - this is a completely free dashboard, changing it to a dynamically changing dashboard would take time and finance to develop and maintain it.
 
 ## How to use the dasboard
 
