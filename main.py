@@ -120,6 +120,14 @@ expander.write('''
     [ReadME](https://github.com/GrovesD2/market_monitor_trend_dash/tree/main#readme) 
     before using this dashboard.**
     
+    The date of the data will appear "lagged" in the dashboard, this is due to
+    the data being refreshed from the last full trading day. Likewise, the 
+    Market Montior is also refreshed on a daily cadence, and therefore, the 
+    model cannot be updated until the Market Montior does. To be clear, this 
+    data does not update during the trading day - this is a completely free 
+    dashboard, changing it to a dynamically changing dashboard would take time 
+    and finance to develop and maintain it.
+    
     For any questions, please contact the author on [X](https://twitter.com/DrDanobi).
 
 ''')
